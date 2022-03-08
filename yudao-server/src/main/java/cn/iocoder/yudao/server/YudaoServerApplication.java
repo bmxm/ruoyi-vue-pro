@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = {"${yudao.info.base-package}.server", "${yudao.info.base-package}.module"})
 public class YudaoServerApplication {
 
+    // mvn clean package -Dmaven.test.skip=true   为什么要先执行这个？
     public static void main(String[] args) {
         SpringApplication.run(YudaoServerApplication.class, args);
     }
